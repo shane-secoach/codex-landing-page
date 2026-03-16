@@ -3,89 +3,115 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shane Evans Coaching</title>
+    <title>Charles Dowding’s Sowing Timeline</title>
     <meta
       name="description"
-      content="Self-leadership coaching for people ready to take ownership and move forward."
+      content="A practical sowing planner app concept to help growers sow on time, buy seeds early, and protect seedlings effectively."
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="hero" id="top">
       <div class="container">
-        <p class="eyebrow">UK-based leadership coaching</p>
-        <h1>Shane Evans Coaching</h1>
+        <p class="eyebrow">App concept for growers</p>
+        <h1>Charles Dowding’s Sowing Timeline</h1>
         <p class="subhead">
-          Self-leadership coaching for people ready to take ownership and move
-          forward.
+          A simple app idea to plan sowing at the right time and avoid missing key
+          windows in the growing season.
         </p>
         <p class="hero-copy">
-          I help people lead themselves first, build self-trust, set clean
-          boundaries, and take practical action. Warm, honest, human coaching
-          focused on real progress, not performance theatre.
+          The process is physical, seasonal, and easy to get wrong when life gets
+          busy. This app concept turns sowing knowledge into clear weekly actions:
+          what to sow, what to buy, and how to protect young plants.
         </p>
 
         <div class="actions" aria-label="Primary actions">
-          <a
-            id="book-call-button"
-            class="button button-primary"
-            href="https://outlook.office.com/bookwithme/user/ca2eab94ea16430f8e7d76c9e82e94b3@secoach.co.uk/meetingtype/YhY3mNNr1U-FtvjNsa0E1w2?anonymous&ep=mLinkFromTile"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Book a call</a
+          <a id="book-call-button" class="button button-primary" href="#features"
+            >View core features</a
           >
-          <a
-            class="button button-secondary"
-            href="https://www.linkedin.com/in/shanecoach"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Read about my work</a
+          <a id="timeline-button" class="button button-secondary" href="#planner"
+            >Try timeline planner</a
           >
         </div>
       </div>
     </header>
 
     <main>
-      <section class="section" id="what-you-get" aria-labelledby="what-you-get-title">
+      <section class="section" id="features" aria-labelledby="features-title">
         <div class="container">
-          <h2 id="what-you-get-title">What you get</h2>
+          <h2 id="features-title">What the app helps you manage</h2>
           <div class="card-grid">
             <article class="card">
-              <h3>Clarity</h3>
-              <p>Understand what matters and what doesn’t.</p>
+              <h3>Sowing timing</h3>
+              <p>
+                Know the right sowing window for each crop based on season,
+                climate, and growing method.
+              </p>
             </article>
             <article class="card">
-              <h3>Confidence</h3>
-              <p>Trust your judgement and back yourself.</p>
+              <h3>Seed buying reminders</h3>
+              <p>
+                Get advance prompts so seeds are bought before key sowing dates,
+                not after them.
+              </p>
             </article>
             <article class="card">
-              <h3>Momentum</h3>
-              <p>Stop overthinking and start moving.</p>
+              <h3>Materials checklist</h3>
+              <p>
+                Track what you need to make sowing happen: trays, compost, labels,
+                watering kit, and workspace prep.
+              </p>
             </article>
             <article class="card">
-              <h3>Impact</h3>
-              <p>Show up better at work and at home.</p>
+              <h3>Seedling protection</h3>
+              <p>
+                Plan protection tasks with mesh or fleece so seedlings stay safe
+                from pests and cold snaps.
+              </p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section section-testimonials" aria-labelledby="testimonials-title">
+      <section class="section section-testimonials" id="timeline" aria-labelledby="timeline-title">
         <div class="container">
-          <h2 id="testimonials-title">Testimonials</h2>
+          <h2 id="timeline-title">Example timeline flow</h2>
           <div class="testimonial-grid">
             <blockquote class="testimonial">
               <p>
-                “I stopped circling the same decisions and finally took action.
-                The sessions felt grounded and practical from day one.”
+                “4-6 weeks before sowing: check stock, order missing seeds, and
+                prepare compost and modules.”
               </p>
             </blockquote>
             <blockquote class="testimonial">
               <p>
-                “I’m clearer, calmer, and much more honest with myself now.
-                Coaching gave me structure without making it feel rigid.”
+                “Sowing week: complete sowing tasks, add reminders for watering,
+                and set alerts for mesh or fleece if weather risk rises.”
               </p>
             </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="planner" aria-labelledby="planner-title">
+        <div class="container">
+          <h2 id="planner-title">Mini timeline planner</h2>
+          <p class="subhead planner-subhead">
+            Pick a stage and get instant tasks so the page actually helps you plan the
+            physical sowing process.
+          </p>
+
+          <div class="planner-card">
+            <label for="timeline-stage">Stage</label>
+            <select id="timeline-stage" name="timeline-stage">
+              <option value="pre">4-6 weeks before sowing</option>
+              <option value="sowing">Sowing week</option>
+              <option value="aftercare">First 2 weeks after germination</option>
+            </select>
+            <button id="planner-generate" class="button button-primary" type="button">
+              Generate tasks
+            </button>
+            <ul id="planner-results" aria-live="polite"></ul>
           </div>
         </div>
       </section>
@@ -93,13 +119,8 @@
 
     <footer class="footer">
       <div class="container footer-content">
-        <p>Email: hello@yourdomain.co.uk</p>
-        <a
-          href="https://www.linkedin.com/in/shanecoach"
-          target="_blank"
-          rel="noopener noreferrer"
-          >LinkedIn</a
-        >
+        <p>Concept: an app to support the real process of sowing seeds on time.</p>
+        <a href="#top">Back to top</a>
       </div>
     </footer>
 
